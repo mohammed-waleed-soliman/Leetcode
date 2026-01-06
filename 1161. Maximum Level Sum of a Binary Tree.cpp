@@ -14,7 +14,7 @@ class Solution {
 public:
     map<int,int>level_sum;
     int level = 1;
-    int mx = INT_MIN, mx2= INT_MIN;
+    int mx = INT_MIN;
     void dfs(TreeNode* root) {
         level_sum[level]+=(root->val);
         level++;
