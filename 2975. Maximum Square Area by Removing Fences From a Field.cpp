@@ -5,9 +5,9 @@ class Solution {
 public:
     const int MOD = 1e9+7;
     int maximizeSquareArea(int m, int n, vector<int>& hFences, vector<int>& vFences) {
-        hFences.insert(hFences.begin(),1);
-        vFences.insert(vFences.begin(),1);
         hFences.push_back(m);
+        hFences.push_back(1);
+        vFences.push_back(1);
         vFences.push_back(n);
         sort(hFences.begin(),hFences.end());
         sort(vFences.begin(),vFences.end());
