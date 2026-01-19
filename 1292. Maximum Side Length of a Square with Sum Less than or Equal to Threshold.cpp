@@ -20,6 +20,7 @@ public:
                 for(int k = 1; k <= min(r-i+1,c-j+1); k++)
                 {
                     if(prefix[i+k-1][j+k-1]-prefix[i-1][j+k-1]-prefix[i+k-1][j-1]+prefix[i-1][j-1]<= threshold) res = max(res,k);
+                    else break;
                 }
             }
         }
